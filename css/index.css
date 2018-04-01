@@ -1,0 +1,97 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+  /* Medium devices (desktops, 992px and up) */
+
+html{
+    margin: 0;
+    height: 100%;
+}
+body{
+    padding: 0px;
+    margin: 0;
+    background-color: #000000; /* #3D598A;  #0499Be;*/
+    height: 100%;
+}
+#map{
+  position:absolute; 
+  top:0; 
+  bottom:0; 
+  width:100%;
+}
+#logo{
+  position: fixed;
+  display: block;
+  top: 8px;
+  left: 90px;
+  z-index: 100;
+
+  /*box-shadow: 0px 0px 40px #888888;*/
+}
+
+#legend{
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  background-color: white;
+  z-index: 100;
+  min-width: 800px;;
+  transform: translateX(-50%);
+  opacity: 0.75;
+  border: 1px solid grey;
+}
+#legend:hover{
+  opacity: 1;
+}
+td{
+  text-align: center;
+  padding-left: 10px;
+}
+.legend-img{
+  display: block;
+  top: 50%;
+  cursor: pointer;
+}
+td span{
+  font-weight: bold;
+}
+textarea { resize:none; }
+
+.greyscale{
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+#stripe_button{
+  position: fixed;
+  z-index: 100;
+  top: 120px;
+  left: 12px;
+}
+
+.delay2{
+  -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+./*my_popup{
+}
+*/
+
+/* Extra Small Devices, Phones */
+@media (min-width: 700px){
+  #legend{
+    visibility: hidden;
+  }
+}
+
+
